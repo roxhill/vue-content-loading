@@ -65,7 +65,7 @@
 
       height: {
         default: 130,
-        type: Number,
+        type: [Number, String],
       },
 
       primary: {
