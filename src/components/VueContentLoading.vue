@@ -83,6 +83,9 @@
 
     computed: {
       viewbox () {
+        if (typeof this.width !== 'number' || typeof this.height !== 'number') {
+          return;
+        }
         return `0 0 ${this.width} ${this.height}`;
       },
 
